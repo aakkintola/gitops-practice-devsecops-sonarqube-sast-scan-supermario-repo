@@ -7,7 +7,7 @@ LABEL maintainer="github.com/aakkintola"
 RUN rm -ef /usr/local/tomcat/webapps/ROOT/*
 
 # Copy your web application to the Tomcar webapps directory
-COPY webapps/ /usr/local/tomcat/webapps/ROOT/
+COPY webapp/ /usr/local/tomcat/webapps/ROOT/
 
 # Change the default shell to bash 
 RUN ln -sf /bin/bash /bin/sh
